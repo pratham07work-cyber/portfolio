@@ -1,31 +1,438 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Pratham Pandey is a first-semester BCom student and multidisciplinary builder creating apps, backends, videos, and business models.">
-  <meta property="og:title" content="Pratham Pandey — Student, builder, maker of apps"><meta property="og:description" content="A motion-led portfolio of product, mobile, and systems work."><meta property="og:type" content="website"><meta property="og:image" content="assets/images/pratham-1.jpg">
-  <title>Pratham Pandey — Student, builder, maker of apps</title><link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,700;6..96,800&family=Pirata+One&family=Playfair+Display:wght@600;700&family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/tokens.css"><link rel="stylesheet" href="css/themes.css"><link rel="stylesheet" href="css/pages.css">
-</head>
-<body data-root="">
-<a class="skip-link" href="#main">Skip to content</a>
-<main id="main">
-  <section class="home-hero" aria-labelledby="hero-title">
-    <h1 id="hero-title" class="home-hero__name" aria-label="Pratham Pandey"><span class="hero-letter">P</span><span class="hero-letter">R</span><span class="hero-letter">A</span><span class="hero-letter">T</span><span class="hero-letter">H</span><span class="hero-letter">A</span><span class="hero-letter">M</span><br><span class="hero-letter">P</span><span class="hero-letter">A</span><span class="hero-letter">N</span><span class="hero-letter">D</span><span class="hero-letter">E</span><span class="hero-letter">Y</span></h1>
-    <div class="hero-triad">
-      <figure class="hero-photo"><img src="assets/images/pratham-1.jpg" alt="Portrait of Pratham Pandey" width="640" height="800"><figcaption>Pratham Pandey / 01</figcaption></figure>
-      <div class="hero-statement"><div><h2>Student,<br>builder,<br>maker of apps.</h2><p>BCom / multidisciplinary / India</p></div></div>
-      <figure class="hero-photo"><img src="assets/images/pratham-2.jpg" alt="Pratham Pandey, builder" width="640" height="800" loading="lazy"><figcaption>Pratham Pandey / 02</figcaption><span class="hero-stamp">PRATHAM<br>PANDEY<br>MADE IT</span></figure>
-    </div>
-    <div class="ticker"><div class="ticker__run">Student builder • India • Open to internships • Apps / backends / videos / business models • Student builder • India • Open to internships • Apps / backends / videos / business models •</div></div>
-  </section>
-  <section class="section home-bio" id="about"><div><span class="eyebrow">About / 01</span><h2 class="section-heading"><span class="line"><span>Curious on</span></span><span class="line"><span>purpose.</span></span></h2></div><div class="bio-copy"><p class="dropcap">I’m a first-semester BCom student who builds apps, backends, videos, and business models alongside coursework.</p><p>I like taking an idea seriously enough to understand its interface, its system, and the real constraints behind it.</p><a data-transition class="editorial-link" href="about/index.html">More about my approach ↗</a></div><aside class="bio-aside"><strong>PP</strong>From coursework to working prototypes. Open to internships where curiosity and ownership matter.</aside></section>
-  <section class="display-banner"><h2>SELECTED / WORK /</h2></section>
-  <section class="section swipe-selector" id="projects"><div class="selector-wrap"><div><span class="eyebrow">Project selector / drag, arrows, keyboard</span><div id="card-stage" class="card-stage" aria-label="Swipeable project selector"></div><div class="swipe-controls"><button id="previous-card" type="button" aria-label="Previous project">←</button><button id="next-card" type="button" aria-label="Next project">→</button></div></div><aside id="selector-copy" class="selector-copy"></aside></div></section>
-  <section class="section section-rule"><span class="eyebrow">All projects / fallback grid</span><div id="project-grid" class="project-grid"></div></section>
-  <section class="display-banner"><h2>TOOLS / INDEX /</h2></section>
-  <section class="section"><span class="eyebrow">Skills from the documented builds</span><ul class="skills-index"><li>Mobile product interfaces <span>Flutter / Compose / Capacitor</span></li><li>Frontend systems <span>React / TypeScript / Vite</span></li><li>Media processing <span>FFmpegKit</span></li><li>Backend services <span>FastAPI / Ktor / Dio</span></li><li>Edge platform <span>Cloudflare Pages / D1 / R2</span></li><li>P2P transport <span>WebRTC / WebSockets</span></li><li>State & local data <span>Riverpod / Hive</span></li><li>Product & systems thinking <span>Architecture / implementation plans</span></li></ul></section>
-</main>
-<script src="js/gsap.min.js"></script><script src="js/ScrollTrigger.min.js"></script><script src="js/lenis.min.js"></script><script src="js/config.js"></script><script src="js/shared.js"></script><script src="js/home.js"></script>
-</body></html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Pratham Pandey is a first-semester BCom student and multidisciplinary builder creating apps, backends, videos, and business models."
+    />
+    <meta
+      property="og:title"
+      content="Pratham Pandey — Student, builder, maker of apps"
+    />
+    <meta
+      property="og:description"
+      content="Pratham Pandey is a first-semester BCom student and multidisciplinary builder creating apps, backends, videos, and business models."
+    />
+    <meta property="og:type" content="website" />
+
+    <title>Pratham Pandey — Student, builder, maker of apps</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,700;6..96,800&family=Pirata+One&family=Playfair+Display:wght@600;700&family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/tokens.css" />
+    <link rel="stylesheet" href="css/themes.css" />
+    <link rel="stylesheet" href="css/pages.css" />
+  </head>
+  <body>
+    <!-- Generated by scripts/build.mjs. Edit scripts/pages.mjs or js/config.js. -->
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="shell-header">
+      <nav class="header-bar" aria-label="Primary">
+        <span class="header-location">[INDIA]</span
+        ><a class="header-name" href="index.html">Pratham Pandey</a>
+        <span class="header-links"
+          ><a data-transition href="index.html#projects">Projects</a
+          ><a data-transition href="about/index.html">About</a
+          ><a href="mailto:pratham07work@gmail.com">Contact</a></span
+        ><button
+          class="menu-button"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-menu"
+          hidden
+        >
+          Menu <i aria-hidden="true"></i>
+        </button>
+      </nav>
+    </header>
+    <main id="main" tabindex="-1">
+      <section class="home-hero" aria-labelledby="hero-title">
+        <h1 id="hero-title" class="home-hero__name" aria-label="Pratham Pandey">
+          <span class="hero-word" aria-hidden="true"
+            ><span class="hero-letter">P</span><span class="hero-letter">R</span
+            ><span class="hero-letter">A</span><span class="hero-letter">T</span
+            ><span class="hero-letter">H</span><span class="hero-letter">A</span
+            ><span class="hero-letter">M</span></span
+          ><span class="hero-word" aria-hidden="true"
+            ><span class="hero-letter">P</span><span class="hero-letter">A</span
+            ><span class="hero-letter">N</span><span class="hero-letter">D</span
+            ><span class="hero-letter">E</span
+            ><span class="hero-letter">Y</span></span
+          >
+        </h1>
+        <div class="hero-triad">
+          <figure class="hero-photo">
+            <picture
+              ><source
+                type="image/webp"
+                srcset="
+                  assets/images/pratham-1-480.webp 480w,
+                  assets/images/pratham-1-960.webp 960w
+                "
+                sizes="(max-width: 820px) 50vw, 30vw" />
+              <img
+                src="assets/images/pratham-1.jpg"
+                alt="Portrait of Pratham Pandey"
+                width="1255"
+                height="2000"
+                loading="eager"
+                fetchpriority="high"
+                decoding="async"
+            /></picture>
+            <figcaption>Pratham Pandey / 01</figcaption>
+          </figure>
+          <div class="hero-statement">
+            <div>
+              <h2>Student,<br />builder,<br />maker of apps.</h2>
+              <p>BCom / multidisciplinary / India</p>
+            </div>
+          </div>
+          <figure class="hero-photo">
+            <picture
+              ><source
+                type="image/webp"
+                srcset="
+                  assets/images/pratham-2-480.webp 480w,
+                  assets/images/pratham-2-864.webp 864w
+                "
+                sizes="(max-width: 820px) 50vw, 30vw" />
+              <img
+                src="assets/images/pratham-2.jpg"
+                alt="Pratham Pandey, builder"
+                width="864"
+                height="1152"
+                loading="lazy"
+                decoding="async"
+            /></picture>
+            <figcaption>Pratham Pandey / 02</figcaption>
+            <span class="hero-stamp" aria-hidden="true"
+              >PRATHAM<br />PANDEY<br />MADE IT</span
+            >
+          </figure>
+        </div>
+        <div class="ticker" aria-hidden="true">
+          <div class="ticker__run">
+            Student builder • India • Open to internships • Apps / backends /
+            videos / business models • Student builder • India • Open to
+            internships • Apps / backends / videos / business models • Student
+            builder • India • Open to internships • Apps / backends / videos /
+            business models • Student builder • India • Open to internships •
+            Apps / backends / videos / business models •
+          </div>
+        </div>
+      </section>
+      <section class="section home-bio" id="about">
+        <div>
+          <span class="eyebrow">About / 01</span>
+          <h2 class="section-heading">
+            <span class="line"><span>Curious on</span></span
+            ><span class="line"><span>purpose.</span></span>
+          </h2>
+        </div>
+        <div class="bio-copy">
+          <p class="dropcap">
+            I’m a first-semester BCom student who builds apps, backends, videos,
+            and business models alongside coursework.
+          </p>
+          <p>
+            I like taking an idea seriously enough to understand its interface,
+            its system, and the real constraints behind it.
+          </p>
+          <a data-transition class="editorial-link" href="about/index.html"
+            >More about my approach ↗</a
+          >
+        </div>
+        <aside class="bio-aside">
+          <strong>PP</strong>From coursework to working prototypes. Open to
+          internships where curiosity and ownership matter.
+        </aside>
+      </section>
+      <section class="display-banner"><h2>SELECTED / WORK /</h2></section>
+      <section
+        class="section swipe-selector"
+        aria-label="Project selector"
+        aria-roledescription="carousel"
+        hidden
+      >
+        <div class="selector-wrap">
+          <div>
+            <p class="eyebrow" id="selector-help">
+              Drag a card, use the arrow buttons, or press left and right arrow
+              keys.
+            </p>
+            <div
+              id="card-stage"
+              class="card-stage"
+              aria-describedby="selector-help"
+            >
+              <article
+                class="swipe-card"
+                data-index="0"
+                data-slug="meme-capsule"
+                aria-label="Meme Capsule, 1 of 3"
+                aria-roledescription="slide"
+                tabindex="0"
+                style="--project-accent: #9b30ff"
+              >
+                <div class="swipe-card__art">
+                  <span>MEME / CAPSULE</span><small>Android + Web</small>
+                </div>
+                <div class="swipe-card__body">
+                  <h3>Meme Capsule</h3>
+                  <span class="status-badge">Released / active</span>
+                  <p>One tap. One meme. Zero fluff.</p>
+                  <a
+                    data-transition
+                    class="editorial-link"
+                    href="projects/meme-capsule/index.html"
+                    >Read the case study ↗</a
+                  >
+                </div>
+              </article>
+              <article
+                class="swipe-card"
+                data-index="1"
+                data-slug="easy-storage-cloud"
+                aria-label="Easy Storage Cloud, 2 of 3"
+                aria-roledescription="slide"
+                tabindex="-1"
+                inert
+                style="--project-accent: #3b82f6"
+              >
+                <div class="swipe-card__art">
+                  <span>YOUR / CLOUD</span><small>Android + Web</small>
+                </div>
+                <div class="swipe-card__body">
+                  <h3>Easy Storage Cloud</h3>
+                  <span class="status-badge is-progress">In development</span>
+                  <p>Your phone is your cloud.</p>
+                  <a
+                    data-transition
+                    class="editorial-link"
+                    href="projects/easy-storage-cloud/index.html"
+                    >Read the case study ↗</a
+                  >
+                </div>
+              </article>
+              <article
+                class="swipe-card"
+                data-index="2"
+                data-slug="convertix"
+                aria-label="Convertix, 3 of 3"
+                aria-roledescription="slide"
+                tabindex="-1"
+                inert
+                style="--project-accent: #6d3ee8"
+              >
+                <div class="swipe-card__art">
+                  <span>Convertix</span><small>ANDROID + iOS</small>
+                </div>
+                <div class="swipe-card__body">
+                  <h3>Convertix</h3>
+                  <span class="status-badge is-progress">Active rebuild</span>
+                  <p>
+                    A Flutter media and document conversion app for Android and
+                    iOS.
+                  </p>
+                  <a
+                    data-transition
+                    class="editorial-link"
+                    href="projects/convertix/index.html"
+                    >Read the case study ↗</a
+                  >
+                </div>
+              </article>
+            </div>
+            <div class="swipe-controls">
+              <button
+                id="previous-card"
+                type="button"
+                aria-label="Previous project"
+              >
+                ←</button
+              ><button id="next-card" type="button" aria-label="Next project">
+                →
+              </button>
+            </div>
+            <p
+              id="selector-status"
+              class="sr-only"
+              role="status"
+              aria-atomic="true"
+            ></p>
+          </div>
+          <aside id="selector-copy" class="selector-copy">
+            <div data-project-copy="meme-capsule">
+              <span class="eyebrow">Now reading / 01</span>
+              <h3>Meme Capsule</h3>
+              <p>
+                A mobile-first meme delivery product built around a
+                single-action capsule rather than an infinite feed. The product
+                pairs a public web platform and Android app with serverless edge
+                delivery and a curation system.
+              </p>
+              <span class="byline">Original ideator &amp; lead frontend</span>
+            </div>
+            <div data-project-copy="easy-storage-cloud" hidden>
+              <span class="eyebrow">Now reading / 02</span>
+              <h3>Easy Storage Cloud</h3>
+              <p>
+                A peer-to-peer personal cloud where an Android phone and its
+                attached storage remain the source of truth. A public relay
+                provides reachability and signaling, rather than becoming the
+                primary file store.
+              </p>
+              <span class="byline">Product &amp; systems builder</span>
+            </div>
+            <div data-project-copy="convertix" hidden>
+              <span class="eyebrow">Now reading / 03</span>
+              <h3>Convertix</h3>
+              <p>
+                A Flutter media and document conversion app for Android and iOS.
+                Media processing is performed on-device without internet, while
+                document conversion runs through a FastAPI and LibreOffice
+                backend.
+              </p>
+              <span class="byline"
+                >App concept &amp; implementation direction</span
+              >
+            </div>
+          </aside>
+        </div>
+      </section>
+      <section
+        class="section section-rule"
+        id="projects"
+        aria-labelledby="projects-title"
+      >
+        <h2 class="eyebrow" id="projects-title">All projects</h2>
+        <div id="project-grid" class="project-grid">
+          <a
+            data-transition
+            class="project-grid__card"
+            href="projects/meme-capsule/index.html"
+            style="--project-accent: #9b30ff"
+            ><div class="project-grid__art">MEME / CAPSULE</div>
+            <span class="eyebrow">01 / Released / active</span>
+            <h3>Meme Capsule</h3>
+            <p>One tap. One meme. Zero fluff.</p>
+            <span class="editorial-link">Read the case study ↗</span></a
+          ><a
+            data-transition
+            class="project-grid__card"
+            href="projects/easy-storage-cloud/index.html"
+            style="--project-accent: #3b82f6"
+            ><div class="project-grid__art">YOUR / CLOUD</div>
+            <span class="eyebrow">02 / In development</span>
+            <h3>Easy Storage Cloud</h3>
+            <p>Your phone is your cloud.</p>
+            <span class="editorial-link">Read the case study ↗</span></a
+          ><a
+            data-transition
+            class="project-grid__card"
+            href="projects/convertix/index.html"
+            style="--project-accent: #6d3ee8"
+            ><div class="project-grid__art">Convertix</div>
+            <span class="eyebrow">03 / Active rebuild</span>
+            <h3>Convertix</h3>
+            <p>
+              A Flutter media and document conversion app for Android and iOS.
+            </p>
+            <span class="editorial-link">Read the case study ↗</span></a
+          >
+        </div>
+      </section>
+      <section class="display-banner"><h2>TOOLS / INDEX /</h2></section>
+      <section class="section">
+        <h2 class="eyebrow">Skills from the documented builds</h2>
+        <ul class="skills-index">
+          <li>
+            Mobile product interfaces<span>Flutter / Compose / Capacitor</span>
+          </li>
+          <li>Frontend systems<span>React / TypeScript / Vite</span></li>
+          <li>Media processing<span>FFmpegKit</span></li>
+          <li>Backend services<span>FastAPI / Ktor / Dio</span></li>
+          <li>Edge platform<span>Cloudflare Pages / D1 / R2</span></li>
+          <li>P2P transport<span>WebRTC / WebSockets</span></li>
+          <li>State & local data<span>Riverpod / Hive</span></li>
+          <li>
+            Product & systems thinking<span
+              >Architecture / implementation plans</span
+            >
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer__headline">Open to internship opportunities.</p>
+      <div class="footer__right">
+        <a href="mailto:pratham07work@gmail.com">pratham07work@gmail.com</a
+        ><a
+          class=""
+          href="https://github.com/bbethical010-glitch"
+          target="_blank"
+          rel="noopener noreferrer"
+          >GitHub</a
+        ><a
+          class=""
+          href="https://www.linkedin.com/in/pratham-pandey-132a77384"
+          target="_blank"
+          rel="noopener noreferrer"
+          >LinkedIn</a
+        ><a
+          class=""
+          href="https://www.instagram.com/pratham07.io?stkn=MW5ueG1oOW4wanZvZA%3D%3D&amp;utm_source=qr"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Instagram</a
+        >
+      </div>
+      <div class="footer__lower">
+        <span>© <span data-year>2026</span> Pratham Pandey</span
+        ><span>Designed as a digital broadsheet</span>
+      </div>
+    </footer>
+    <dialog class="menu-overlay" id="site-menu" aria-labelledby="menu-title">
+      <div class="menu-overlay__top">
+        <h2 id="menu-title">Site menu</h2>
+        <button class="menu-close" type="button" autofocus>Close ×</button>
+      </div>
+      <nav class="menu-links" aria-label="Site menu">
+        <a data-transition href="index.html#projects">Projects</a
+        ><a data-transition href="about/index.html">About</a
+        ><a href="mailto:pratham07work@gmail.com">Contact</a>
+      </nav>
+      <div class="menu-social">
+        <a
+          class=""
+          href="https://github.com/bbethical010-glitch"
+          target="_blank"
+          rel="noopener noreferrer"
+          >GitHub</a
+        ><a
+          class=""
+          href="https://www.linkedin.com/in/pratham-pandey-132a77384"
+          target="_blank"
+          rel="noopener noreferrer"
+          >LinkedIn</a
+        ><a
+          class=""
+          href="https://www.instagram.com/pratham07.io?stkn=MW5ueG1oOW4wanZvZA%3D%3D&amp;utm_source=qr"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Instagram</a
+        >
+      </div>
+    </dialog>
+    <script src="js/gsap.min.js" defer></script>
+    <script src="js/ScrollTrigger.min.js" defer></script>
+    <script src="js/lenis.min.js" defer></script>
+    <script type="module" src="js/home.js"></script>
+  </body>
+</html>

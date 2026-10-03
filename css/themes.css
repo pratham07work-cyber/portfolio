@@ -18,7 +18,7 @@ body[data-theme="meme-capsule"] {
 }
 
 body[data-theme="meme-capsule"] .shell-header {
-  background: rgba(19, 19, 19, 0.95);
+  background: #131313;
   border-bottom: 2px solid #9b30ff;
 }
 
@@ -155,8 +155,9 @@ body[data-theme="meme-capsule"] .arch-highlight-card span {
   color: #f4c300;
 }
 
-body[data-theme="meme-capsule"] .arch-wire-pulse {
+body[data-theme="meme-capsule"] .arch-wire {
   stroke: #f4c300;
+  color: #f4c300;
 }
 
 body[data-theme="meme-capsule"] .arch-node-box {
@@ -191,9 +192,36 @@ body[data-theme="meme-capsule"] .next-project:hover {
   color: #f4c300;
 }
 
-body[data-theme="easy-storage-cloud"] { --page: #060a14; --surface: #111827; --ink: #e5f2ff; --muted: #94a3b8; --accent: #3b82f6; --accent-ink: #06101f; --theme-dark: #060a14; --theme-light: #e5f2ff; --line: #1e293b; }
-/* TODO: confirm with Convertix app UI. Palette not described in supplied documentation. */
-body[data-theme="convertix"] { --page: #eee9f8; --surface: #d9cff4; --ink: #1e1535; --muted: #655e74; --accent: #6d3ee8; --accent-ink: #fbf8ff; --theme-dark: #1e1535; --theme-light: #fbf8ff; }
-body[data-theme="easy-storage-cloud"] .shell-header { background: #060a14; }
-body[data-theme="easy-storage-cloud"] .display-banner { color: #060a14; background: #3b82f6; }
-body[data-theme="convertix"] .display-banner { color: #fbf8ff; background: #6d3ee8; }
+body[data-theme="easy-storage-cloud"] {
+  --page: #060a14;
+  --surface: #111827;
+  --ink: #e5f2ff;
+  --muted: #94a3b8;
+  --accent: #3b82f6;
+  --accent-ink: #06101f;
+  --theme-dark: #060a14;
+  --theme-light: #e5f2ff;
+  --line: #1e293b;
+}
+/* Portfolio presentation palette; the supplied docs do not define the app palette. */
+body[data-theme="convertix"] {
+  --page: #eee9f8;
+  --surface: #d9cff4;
+  --ink: #1e1535;
+  --muted: #655e74;
+  --accent: #6d3ee8;
+  --accent-ink: #fbf8ff;
+  --theme-dark: #1e1535;
+  --theme-light: #fbf8ff;
+}
+body[data-theme="easy-storage-cloud"] .shell-header {
+  background: #060a14;
+}
+body[data-theme="easy-storage-cloud"] .display-banner {
+  color: #060a14;
+  background: #3b82f6;
+}
+body[data-theme="convertix"] .display-banner {
+  color: #fbf8ff;
+  background: #6d3ee8;
+}

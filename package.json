@@ -1,0 +1,23 @@
+{
+  "name": "pratham-pandey-portfolio",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "build:check": "node scripts/build.mjs --check",
+    "images": "node scripts/images.mjs",
+    "preview": "node scripts/serve.mjs",
+    "test": "playwright test",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "check": "npm run format:check && npm run build:check && node --check js/shared.js && node --check js/home.js && node --check js/project.js"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "prettier": "3.9.9",
+    "sharp": "0.35.5"
+  }
+}

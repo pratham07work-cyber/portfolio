@@ -1,0 +1,17 @@
+node_modules/
+dist/
+test-results/
+playwright-report/
+js/*.min.js
+uploads/
+screenshots/
+/convertix/
+/easy cloud storage/
+/meme capsule/
+DESIGN (2).md
+PLAN.md
+theme (1).css
+variables (1).css
+tokens (1).json
+.claude/
+package-lock.json

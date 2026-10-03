@@ -1,0 +1,135 @@
+{
+  "assets/images/pratham-1.jpg": {
+    "width": 1255,
+    "height": 2000,
+    "originalBytes": 237335,
+    "sources": [
+      {
+        "src": "assets/images/pratham-1-480.webp",
+        "width": 480,
+        "height": 765,
+        "bytes": 23238
+      },
+      {
+        "src": "assets/images/pratham-1-960.webp",
+        "width": 960,
+        "height": 1530,
+        "bytes": 50366
+      }
+    ]
+  },
+  "assets/images/pratham-2.jpg": {
+    "width": 864,
+    "height": 1152,
+    "originalBytes": 173209,
+    "sources": [
+      {
+        "src": "assets/images/pratham-2-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 44738
+      },
+      {
+        "src": "assets/images/pratham-2-864.webp",
+        "width": 864,
+        "height": 1152,
+        "bytes": 127108
+      }
+    ]
+  },
+  "assets/images/meme-capsule/loading-screen.jpg": {
+    "width": 1079,
+    "height": 2320,
+    "originalBytes": 241184,
+    "sources": [
+      {
+        "src": "assets/images/meme-capsule/loading-screen-320.webp",
+        "width": 320,
+        "height": 689,
+        "bytes": 12662
+      },
+      {
+        "src": "assets/images/meme-capsule/loading-screen-640.webp",
+        "width": 640,
+        "height": 1376,
+        "bytes": 25146
+      }
+    ]
+  },
+  "assets/images/meme-capsule/home-screen.jpg": {
+    "width": 1079,
+    "height": 2305,
+    "originalBytes": 193079,
+    "sources": [
+      {
+        "src": "assets/images/meme-capsule/home-screen-320.webp",
+        "width": 320,
+        "height": 684,
+        "bytes": 9434
+      },
+      {
+        "src": "assets/images/meme-capsule/home-screen-640.webp",
+        "width": 640,
+        "height": 1367,
+        "bytes": 19340
+      }
+    ]
+  },
+  "assets/images/meme-capsule/meme-loaded.jpg": {
+    "width": 1077,
+    "height": 2300,
+    "originalBytes": 378178,
+    "sources": [
+      {
+        "src": "assets/images/meme-capsule/meme-loaded-320.webp",
+        "width": 320,
+        "height": 684,
+        "bytes": 20766
+      },
+      {
+        "src": "assets/images/meme-capsule/meme-loaded-640.webp",
+        "width": 640,
+        "height": 1367,
+        "bytes": 49600
+      }
+    ]
+  },
+  "assets/images/meme-capsule/vault.jpg": {
+    "width": 1079,
+    "height": 2319,
+    "originalBytes": 295506,
+    "sources": [
+      {
+        "src": "assets/images/meme-capsule/vault-320.webp",
+        "width": 320,
+        "height": 688,
+        "bytes": 13414
+      },
+      {
+        "src": "assets/images/meme-capsule/vault-640.webp",
+        "width": 640,
+        "height": 1375,
+        "bytes": 29996
+      }
+    ]
+  },
+  "assets/images/meme-capsule/moodboards.jpg": {
+    "width": 1080,
+    "height": 2311,
+    "originalBytes": 269217,
+    "sources": [
+      {
+        "src": "assets/images/meme-capsule/moodboards-320.webp",
+        "width": 320,
+        "height": 684,
+        "bytes": 13852
+      },
+      {
+        "src": "assets/images/meme-capsule/moodboards-640.webp",
+        "width": 640,
+        "height": 1369,
+        "bytes": 31876
+      }
+    ]
+  }
+}
